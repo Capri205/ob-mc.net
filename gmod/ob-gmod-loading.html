@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>OB-GMod Server</title>
+
+		<link rel="stylesheet" href="ob-gmod-loading.css">
+		<link rel="stylesheet" href="slideshow/jquery-slideshow.css">
+
+		<script src="slideshow/jquery-min.js"></script>
+		<script src="slideshow/jquery-background-slideshow.js"></script>
+
+	</head>
+
+	<body>
+		<div class="overlay-table">
+			<div class="overlay-row1">
+				<div class="overlay-row1-text">You are currently loading into the</div>
+			</div>
+			<div class="overlay-row2">
+				<div class="overlay-row2-text"><font style="color:red">OB-GMOD</font>&nbsp;<font style="color:black">SERVER</font></div>
+			</div>
+			<div class="overlay-row3">
+				<div class="overlay-row3-text">M9K|SIMFPHYS|LFS|GREDWITCH</div>
+			</div>
+			<div class="overlay-row4">
+				<div class="overlay-row4-text">PVP ANARCHY SANDBOX</div>
+			</div>
+			<div class="overlay-row5">
+				<div class="overlay-row5-text">This should only take a few minutes ...</div>
+			</div>
+			<div class="overlay-row6">
+				<div class="overlay-row6-text">Now Playing: -Soda City Funk-</div>
+			</div>
+		</div>
+		<!-- slideshow javascript -->
+		<div id="slideshow">
+			<script type = "text/javascript" >
+				$(document).ready(function () {
+					$("body").backgroundSlideshow({
+						onBeforeTransition: function (index) {
+						},
+						onAfterTransition: function (index) {
+						},
+						transitionDuration: 1000,
+						fixed: true,
+						images: [
+							"/gmod/screenshots/20200412143917_1.jpg",
+							"/gmod/screenshots/20200412151408_1.jpg",
+							"/gmod/screenshots/20200412150955_1.jpg",
+							"/gmod/screenshots/20200412150741_1.jpg",
+							"/gmod/screenshots/20200412145554_1.jpg",
+							"/gmod/screenshots/20200412145816_1.jpg",
+							"/gmod/screenshots/20200412150455_1.jpg",
+							"/gmod/screenshots/20200412144427_1.jpg",
+							"/gmod/screenshots/20200412164340_1.jpg",
+							"/gmod/screenshots/20200412144355_1.jpg",
+							"/gmod/screenshots/20200412150506_1.jpg",
+							"/gmod/screenshots/20200412145929_1.jpg",
+							"/gmod/screenshots/20200412151624_1.jpg",
+							"/gmod/screenshots/20200412151037_1.jpg",
+							"/gmod/screenshots/20200412145917_1.jpg",
+							"/gmod/screenshots/20200412144543_1.jpg",
+							"/gmod/screenshots/20200412150723_1.jpg",
+							"/gmod/screenshots/20200412150900_1.jpg",
+							"/gmod/screenshots/20200412144147_1.jpg",
+							"/gmod/screenshots/20200412145342_1.jpg",
+							"/gmod/screenshots/20200412145847_1.jpg",
+							"/gmod/screenshots/20200412150756_1.jpg",
+							"/gmod/screenshots/20200412141635_1.jpg",
+							"/gmod/screenshots/20200412144824_1.jpg",
+							"/gmod/screenshots/20200412142720_1.jpg",
+							"/gmod/screenshots/20200412151340_2.jpg",
+							"/gmod/screenshots/20191227172714_1.jpg",
+							"/gmod/screenshots/20180515210120_1.jpg"
+						]
+					})
+				})
+		</script>
+		</div>
+
+		<!-- background music -->
+		<div id="music">
+			<audio autoplay loop src="/gmod/soda-city-funk.ogg"></audio>
+		</div>
+	</body>
+</html>

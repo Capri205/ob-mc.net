@@ -1,0 +1,71 @@
+.overlay-table {
+	border-collapse:collapse;
+	width:80%; height: 100%; margin-left:auto; margin-right:auto;
+}
+
+
+.overlay-row1 {
+	border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; text-align: center; height:150px;
+}
+.overlay-row1-text {
+	position:absolute; text-align:center; width:50%;
+	margin-top:100px; margin-left:25%; margin-right:auto; margin-bottom:auto;
+	color:black; font-family:Impact, Charcoal, sans-serif; font-size:35px;
+	background-color:rgba(255,255,255,0.4); border-radius:8px;
+}
+
+
+.overlay-row2 {
+	border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; text-align: center; height:120px;
+}
+.overlay-row2-text {
+	position:absolute; text-align:center; width:50%; margin-left:25%;
+	font-family:Impact; font-size:100px;
+	background-color:rgba(255,255,255,0.4); border-radius:8px;
+}
+
+
+.overlay-row3 {
+	border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; align-items:center; height:120px;
+}
+.overlay-row3-text {
+	position:absolute; text-align:center; width:60%; margin-left:20%; margin-top:30px;
+	color:black; font-family:Impact, Charcoal, sans-serif; font-size:60px; 
+	background-color:rgba(255,255,255,0.4); border-radius:8px;
+}
+
+
+.overlay-row4 {
+	border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; align-items:center; height:80px;
+}
+.overlay-row4-text {
+	position:absolute; text-align:center; width:50%; margin-left:25%; margin-top:15px;
+	color:red; font-family:Impact, Charcoal, sans-serif; font-size:50px;
+	background-color:rgba(255,255,255,0.5); border-radius:8px;
+}
+
+
+.overlay-row5 {
+	border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; align-items:center; height:120px;
+}
+.overlay-row5-text {
+	position:absolute; text-align:center; width:60%; margin-left:20%; margin-top:35px;
+	color:blue; font-family:Impact, Charcoal, sans-serif; font-size:50px;
+	background-color:rgba(255,255,255,0.5); border-radius:8px;
+}
+
+
+.overlay-row6 {
+	border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; align-items:center; height:70px;
+}
+.overlay-row6-text {
+	position:absolute; text-align:center; width:50%; margin-left:25%; margin-top:15px;
+	color:magenta; font-family:Impact, Charcoal, sans-serif; font-size:40px;
+	background-color:rgba(255,255,255,0.5); border-radius:8px;
+}
