@@ -51,7 +51,7 @@
 			$tfdatfh->seek($value);
 			while (!$tfdatfh->eof()) {
 				array_push($tfdatartn, $tfdatfh->current());
-				$tfdatfh->fgets();
+				$tfdatfh->next();
 			}
 			// update id with new key value
 			$value = $tfdatfh->key();
