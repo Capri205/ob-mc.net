@@ -27,7 +27,7 @@
 	$tfposfh = null;
 	if (!file_exists($tfposfile)) {
 		$tfposfh = fopen($tfposfile, "w");
-		$tfposdata = array('MCMonitor' => 40);
+		$tfposdata = array('MCMonitor' => 0);
 		fwrite($tfposfh, json_encode($tfposdata));
 		fclose($tfposfh);
 	}
@@ -48,9 +48,11 @@
 //			echo "debug - last row " . $lastline . "<br>";
 
 			// read lines from our id position to the end if not the same
-			$tfdatfh->seek($value);
+			$tfdatfh->seek($value - 1);
 			while (!$tfdatfh->eof()) {
-				array_push($tfdatartn, $tfdatfh->current());
+				if ( $tfdatfh->current() != "" ) {
+					array_push($tfdatartn, $tfdatfh->current());
+				}
 				$tfdatfh->next();
 			}
 			// update id with new key value
