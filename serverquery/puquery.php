@@ -22,7 +22,7 @@
 	$tfpos = 0;
 	$tfposdata = array();
 	$tfposfile = "tracker.pos";
-	$tfdatfile = "tracker.dat";
+	$tfdatfile = "/overviewer/serverquery/tracker.dat";
 	$tfdatartn = array();
 	$tfposfh = null;
 	if (!file_exists($tfposfile)) {
