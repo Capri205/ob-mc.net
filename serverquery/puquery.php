@@ -7,15 +7,27 @@
         // check IP address of requester
 	$remoteip = filter_var($_SERVER['REMOTE_ADDR'], FILTER_VALIDATE_IP);
 	if (!preg_match('/^192\.168\.1\.1$/', $remoteip)){
+		header("Location: http://".$_SERVER['HTTP_HOST']);
+        echo "you are coming from: " . $remoteip;
+        echo "go away now";
 		return;
  	}
 
 	// validate input
-        $id = $_POST['id'];
-        if($id != "MCMonitor") {
-                echo "Invalid request";
-		return;
-        }
+    $id = $_POST['id'];
+    if($id != "MCMonitor") {
+        echo "Invalid request";
+        return;
+    }
+	$id = $_POST['id'];
+    if($id != "MCMonitor") {
+        header("Location: http://".$_SERVER['HTTP_HOST']);
+        return;
+    }
+    $offset = false;
+    if ( isset( $_POST['offset'] ) && $_POST['offset'] == "true" ) {
+        $offset = true;
+    }
 
 	// setup and create a new tracking file position data file if one doesn't exist
 
@@ -40,24 +52,27 @@
 	$tfposdata = json_decode($jsondata);
 	foreach ($tfposdata as $key => &$value) {
 
-			// open our tracker for reading and get the number of lines	
-			$tfdatfh = new SplFileObject($tfdatfile, 'r');
-//			$tfdatfh->seek(PHP_INT_MAX);
-//			$lastline = ($tfdatfh->key());
-//			$tfdatfh->rewind();
-//			echo "debug - last row " . $lastline . "<br>";
+		if ( $offset ) {
+			$value -= 100;
+		}
+		// open our tracker for reading and get the number of lines	
+		$tfdatfh = new SplFileObject($tfdatfile, 'r');
+//		$tfdatfh->seek(PHP_INT_MAX);
+//		$lastline = ($tfdatfh->key());
+//		$tfdatfh->rewind();
+//		echo "debug - last row " . $lastline . "<br>";
 
-			// read lines from our id position to the end if not the same
-			$tfdatfh->seek($value - 1);
-			while (!$tfdatfh->eof()) {
-				if ( $tfdatfh->current() != "" ) {
-					array_push($tfdatartn, $tfdatfh->current());
-				}
-				$tfdatfh->next();
+		// read lines from our id position to the end if not the same
+		$tfdatfh->seek($value - 1);
+		while (!$tfdatfh->eof()) {
+			if ( $tfdatfh->current() != "" ) {
+				array_push($tfdatartn, $tfdatfh->current());
 			}
-			// update id with new key value
-			$value = $tfdatfh->key();
-			$tfdatfh = null;
+			$tfdatfh->next();
+		}
+		// update id with new key value
+		$value = $tfdatfh->key();
+		$tfdatfh = null;
 	}
 	unset($value);
 
