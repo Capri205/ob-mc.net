@@ -1,8 +1,16 @@
 .overlay-table {
-	border-collapse:collapse;
-	width:80%; height: 100%; margin-left:auto; margin-right:auto;
+	display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Optional: Centers text horizontally */
+    justify-content: flex-start; /* Aligns items from the top */
+    height: 100vh; /* Makes the container take up the full screen height */
+    width: 100%; /* Ensures it spans the entire width */
 }
-
+.overlay-table > div {
+    width: 100%; /* Ensures each row takes full width */
+    text-align: center; /* Centers text inside */
+    padding: 10px; /* Adds spacing */
+}
 
 .overlay-row1 {
 	border-color:transparent; border-width:1px; border-style:solid;
@@ -15,8 +23,10 @@
 	background-color:rgba(255,255,255,0.4); border-radius:8px;
 }
 
-
 .overlay-row2 {
+	width: 100%; /* Ensures each row takes full width */
+    text-align: center; /* Centers text inside */
+    padding: 10px; /* Adds spacing */
 	border-color:transparent; border-width:1px; border-style:solid;
 	position:relative; text-align: center; height:120px;
 }
@@ -25,7 +35,6 @@
 	font-family:Impact; font-size:100px;
 	background-color:rgba(255,255,255,0.4); border-radius:8px;
 }
-
 
 .overlay-row3 {
 	border-color:transparent; border-width:1px; border-style:solid;
@@ -37,7 +46,6 @@
 	background-color:rgba(255,255,255,0.4); border-radius:8px;
 }
 
-
 .overlay-row4 {
 	border-color:transparent; border-width:1px; border-style:solid;
 	position:relative; align-items:center; height:80px;
@@ -48,7 +56,6 @@
 	background-color:rgba(255,255,255,0.5); border-radius:8px;
 }
 
-
 .overlay-row5 {
 	border-color:transparent; border-width:1px; border-style:solid;
 	position:relative; align-items:center; height:120px;
@@ -58,7 +65,6 @@
 	color:blue; font-family:Impact, Charcoal, sans-serif; font-size:50px;
 	background-color:rgba(255,255,255,0.5); border-radius:8px;
 }
-
 
 .overlay-row6 {
 	border-color:transparent; border-width:1px; border-style:solid;
