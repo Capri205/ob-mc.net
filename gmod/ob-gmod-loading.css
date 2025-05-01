@@ -5,73 +5,76 @@
     justify-content: flex-start; /* Aligns items from the top */
     height: 100vh; /* Makes the container take up the full screen height */
     width: 100%; /* Ensures it spans the entire width */
+	padding: 2vh; /* Adjusts based on viewport size */
 }
 .overlay-table > div {
     width: 100%; /* Ensures each row takes full width */
     text-align: center; /* Centers text inside */
-    padding: 10px; /* Adds spacing */
+    padding: 10px;
 }
 
 .overlay-row1 {
 	border-color:transparent; border-width:1px; border-style:solid;
-	position:relative; text-align: center; height:150px;
+	position:relative; text-align: center;
 }
 .overlay-row1-text {
-	position:absolute; text-align:center; width:50%;
-	margin-top:100px; margin-left:25%; margin-right:auto; margin-bottom:auto;
-	color:black; font-family:Impact, Charcoal, sans-serif; font-size:35px;
-	background-color:rgba(255,255,255,0.4); border-radius:8px;
+	position: relative; text-align: center; max-width: 60%; margin: 5vh auto; padding: 1vh 2vw;
+    color: black; font-family: Impact, Charcoal, sans-serif; font-size: 2vw;
+	background-color: rgba(255, 255, 255, 0.4); border-radius: 8px;
 }
 
 .overlay-row2 {
-	width: 100%; /* Ensures each row takes full width */
-    text-align: center; /* Centers text inside */
-    padding: 10px; /* Adds spacing */
-	border-color:transparent; border-width:1px; border-style:solid;
-	position:relative; text-align: center; height:120px;
+    border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; text-align: center;
+	padding: 10px;
 }
 .overlay-row2-text {
-	position:absolute; text-align:center; width:50%; margin-left:25%;
-	font-family:Impact; font-size:100px;
+	position: relative; text-align: center; max-width: 60%; margin: 5vh auto; padding: 1vh 2vw;
+	font-family:Impact;	font-size: 2vw;
 	background-color:rgba(255,255,255,0.4); border-radius:8px;
+
 }
 
 .overlay-row3 {
 	border-color:transparent; border-width:1px; border-style:solid;
-	position:relative; align-items:center; height:120px;
+	position:relative; text-align: center;
+	padding: 10px;
 }
 .overlay-row3-text {
-	position:absolute; text-align:center; width:60%; margin-left:20%; margin-top:30px;
-	color:black; font-family:Impact, Charcoal, sans-serif; font-size:60px; 
-	background-color:rgba(255,255,255,0.4); border-radius:8px;
+	position: relative; text-align: center; max-width: 60%; margin: 5vh auto; padding: 1vh 2vw;
+	color:black; font-family:Impact, Charcoal, sans-serif; font-size: 2vw;
+	background-color:rgba(255,255,255,0.25); border-radius: 8px;
 }
 
 .overlay-row4 {
-	border-color:transparent; border-width:1px; border-style:solid;
-	position:relative; align-items:center; height:80px;
+    border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; text-align: center;
+	padding: 10px;
 }
 .overlay-row4-text {
-	position:absolute; text-align:center; width:50%; margin-left:25%; margin-top:15px;
-	color:red; font-family:Impact, Charcoal, sans-serif; font-size:50px;
-	background-color:rgba(255,255,255,0.5); border-radius:8px;
+	position: relative; text-align: center; max-width: 60%; margin: 5vh auto; padding: 1vh 2vw;
+	color:red; font-family:Impact, Charcoal, sans-serif; font-size: 2vw;
+	background-color:rgba(255,255,255,0.25); border-radius:8px;
 }
 
 .overlay-row5 {
-	border-color:transparent; border-width:1px; border-style:solid;
-	position:relative; align-items:center; height:120px;
+    border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; text-align: center;
+	padding: 10px;
 }
 .overlay-row5-text {
-	position:absolute; text-align:center; width:60%; margin-left:20%; margin-top:35px;
-	color:blue; font-family:Impact, Charcoal, sans-serif; font-size:50px;
-	background-color:rgba(255,255,255,0.5); border-radius:8px;
+	position: relative; text-align: center; max-width: 60%; margin: 5vh auto; padding: 1vh 2vw;
+	color:blue; font-family:Impact, Charcoal, sans-serif; font-size: 2vw;
+	background-color:rgba(255,255,255,0.25); border-radius:8px;
 }
 
 .overlay-row6 {
-	border-color:transparent; border-width:1px; border-style:solid;
-	position:relative; align-items:center; height:70px;
+    border-color:transparent; border-width:1px; border-style:solid;
+	position:relative; text-align: center;
+	padding: 10px;
 }
 .overlay-row6-text {
-	position:absolute; text-align:center; width:50%; margin-left:25%; margin-top:15px;
-	color:magenta; font-family:Impact, Charcoal, sans-serif; font-size:40px;
+	position: relative; text-align: center; max-width: 60%; margin: 5vh auto; padding: 1vh 2vw;
+	color:magenta; font-family:Impact, Charcoal, sans-serif; font-size: 2vw;
 	background-color:rgba(255,255,255,0.5); border-radius:8px;
 }
